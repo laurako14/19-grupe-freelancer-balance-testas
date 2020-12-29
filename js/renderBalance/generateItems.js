@@ -8,8 +8,8 @@ function generateItems(selector, tableData) {
     <div class="cell">${line.month}</div>
     <div class="cell">${tableData.months[i]}</div>
     <div class="cell">${line.income} Eur</div>
-    <div class="cell">-</div>
-    <div class="cell">150.00 Eur</div>
+    <div class="cell">${line.expense}</div>
+    <div class="cell">${line.income - line.expense} Eur</div>
 </div>`
     }
     DOM.innerHTML = HTML;
